@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yt-dlp-la1ere"
+version = "2026.10.21"
+description = "yt-dlp plugin for la1ere.franceinfo.fr videos and audio podcasts"
+readme = "README.md"
+license = "Unlicense"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Laurent Dinclaux", email = "laurent@gecka.nc" }]
+keywords = ["yt-dlp", "yt-dlp-plugins", "la1ere", "francetv"]
+
+[project.urls]
+Repository = "https://github.com/loxK/yt-dlp-la1ere"
+
+[tool.setuptools.packages.find]
+include = ["yt_dlp_plugins*"]
+namespaces = true
